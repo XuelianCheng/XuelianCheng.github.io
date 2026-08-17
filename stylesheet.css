@@ -241,6 +241,22 @@ nav.sitenav a.active {
   border-color: #d7e3f3;
 }
 
+.member-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.member-avatar {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--hairline);
+}
+
 .member-card .member-name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 17px;
