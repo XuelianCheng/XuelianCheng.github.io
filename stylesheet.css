@@ -289,17 +289,19 @@ nav.sitenav a.active {
 
 .pub-badge {
   position: absolute;
-  top: 0;
   left: 0;
-  background-color: var(--accent-dark);
+  bottom: 0;
+  width: max-content;
+  white-space: nowrap;
+  background-color: rgba(15, 79, 150, 0.85);
   color: #ffffff;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: 0 0 6px 0;
+  padding: 4px 11px;
+  border-radius: 0 6px 0 0;
 }
 
 /* profile photo */
