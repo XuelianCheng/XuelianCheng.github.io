@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Projects - Xuelian Cheng</title>
+  <title>Research - Xuelian Cheng</title>
 
   <meta name="author" content="Xuelian Cheng">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,8 +71,8 @@
           <ul>
             <li><a href="index.html">Main</a></li>
             <li><a href="team.html">Team</a></li>
+            <li><a href="research.html" class="active">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
           </ul>
         </nav>
 
@@ -81,77 +81,86 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Projects</heading>
+              <heading>Research Topics</heading>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:0 20px 10px 20px;width:100%;valign:middle">
+              <div style="text-indent:0em"> My research sits at the intersection of 3D vision and machine learning, aiming to build systems that can perceive, reconstruct, and reason about the geometry of the real world &mdash; from operating rooms to open scenes &mdash; and act on that understanding. This spans dense geometry estimation and neural architecture search, video and multimodal reasoning, and embodied agents that turn perception into action. </div>
             </td>
           </tr>
         </tbody></table>
 
-        <!-- EndoSurf -->
+        <!-- Topic 1: Robotic Surgery -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="papers/miccai2023.png" alt="EndoSurf" width="160" style="border-style: none">
+              <img src="papers/miccai2023.png" alt="Robotic Surgery & Surgical Scene Understanding" width="160" style="border-style: none">
             </td>
             <td style="padding:20px;width:75%;valign:middle">
-              <div style="text-indent:0.1em"> <papertitle>EndoSurf</papertitle> </div>
-              <div style="text-indent:0.1em"> Neural surface reconstruction of deformable tissues from stereo endoscope videos, using neural implicit representations to recover accurate, temporally consistent 3D tissue geometry for robotic surgery. </div>
-              <div style="text-indent:0.1em"> <a href="https://arxiv.org/abs/2307.11307">[Paper]</a>  <a href="https://github.com/Ruyi-Zha/endosurf.git">[Code]</a>
+              <div style="text-indent:0.1em"> <papertitle>Robotic Surgery &amp; Surgical Scene Understanding</papertitle> </div>
+              <div style="text-indent:0.1em"> Recovering accurate, temporally consistent 3D geometry of deforming tissue from endoscopic and laparoscopic video, and registering pre- and intra-operative imaging, to support safer, more autonomous robotic surgery. </div>
+              <div style="text-indent:0.1em"> Representative work:
+                <a href="https://arxiv.org/abs/2307.11307">EndoSurf</a> (MICCAI 2023, Oral) &middot;
+                <a href="https://arxiv.org/pdf/2207.12152.pdf">HybridStereoNet</a> (MICCAI 2022) &middot;
+                <a href="https://doi.org/10.1109/LRA.2025.3623938">ColonAdapter</a> (RA-L 2025) &middot;
+                <a href="https://openreview.net/forum?id=1Vtktd4k3C">XPos3R</a> (ECCV 2026)
+              </div>
               </td>
           </tr>
         </tbody></table>
 
-        <!-- HybridStereoNet -->
+        <!-- Topic 2: Stereo Matching, 3D Reconstruction & Generation -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="papers/miccai22.png" alt="HybridStereoNet" width="160" style="border-style: none">
+              <img src="papers/nips20.png" alt="Stereo Matching, 3D Reconstruction & Generation" width="160" style="border-style: none">
             </td>
             <td style="padding:20px;width:75%;valign:middle">
-              <div style="text-indent:0.1em"> <papertitle>HybridStereoNet</papertitle> </div>
-              <div style="text-indent:0.1em"> A hybrid CNN-Transformer stereo matching network for laparoscopic scenes, designed to give robust dense depth estimates under the low-texture, specular, and deforming conditions of minimally invasive surgery. </div>
-              <div style="text-indent:0.1em"> <a href="https://arxiv.org/pdf/2207.12152.pdf">[Paper]</a>  <a href="https://github.com/XuelianCheng/HybridStereoNet">[Code]</a>
+              <div style="text-indent:0.1em"> <papertitle>Stereo Matching, 3D Reconstruction &amp; Generation</papertitle> </div>
+              <div style="text-indent:0.1em"> Automatically searching neural architectures for dense stereo matching, and fusing sparse LiDAR with stereo cues for robust, generalizable depth &mdash; extended more recently to diffusion-based tomographic reconstruction and text-driven 3D scene generation. </div>
+              <div style="text-indent:0.1em"> Representative work:
+                <a href="https://proceedings.neurips.cc/paper/2020/file/fc146be0b230d7e0a92e66a6114b840d-Paper.pdf">LEAStereo</a> (NeurIPS 2020) &middot;
+                <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Cheng_Noise-Aware_Unsupervised_Deep_Lidar-Stereo_Fusion_CVPR_2019_paper.pdf">LidarStereoNet</a> (CVPR 2019) &middot;
+                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/37871">DiffNR</a> (AAAI 2026) &middot;
+                <a href="https://openreview.net/forum?id=0XOejrD724">RoomPlanner</a> (ECCV 2026)
+              </div>
               </td>
           </tr>
         </tbody></table>
 
-        <!-- SLT-Net -->
+        <!-- Topic 3: Video Understanding & Multimodal Reasoning -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="papers/cvpr22.png" alt="SLT-Net" width="160" style="border-style: none">
+              <img src="papers/cvpr22.png" alt="Video Understanding & Multimodal Reasoning" width="160" style="border-style: none">
             </td>
             <td style="padding:20px;width:75%;valign:middle">
-              <div style="text-indent:0.1em"> <papertitle>SLT-Net</papertitle> </div>
-              <div style="text-indent:0.1em"> An implicit short- and long-term motion modelling framework for video camouflaged object detection, released together with a large-scale synthetic dataset for training and benchmarking. </div>
-              <div style="text-indent:0.1em"> <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Cheng_Implicit_Motion_Handling_for_Video_Camouflaged_Object_Detection_CVPR_2022_paper.pdf">[Paper]</a>  <a href="https://github.com/XuelianCheng/SLT-Net">[Code]</a> <a href="https://xueliancheng.github.io/SLT-Net-project/">[Dataset]</a>
+              <div style="text-indent:0.1em"> <papertitle>Video Understanding &amp; Multimodal Reasoning</papertitle> </div>
+              <div style="text-indent:0.1em"> Modelling short- and long-term motion cues for video camouflaged object detection, and building multimodal agents that reason over video and retain stateful experience across long-horizon tasks. </div>
+              <div style="text-indent:0.1em"> Representative work:
+                <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Cheng_Implicit_Motion_Handling_for_Video_Camouflaged_Object_Detection_CVPR_2022_paper.pdf">SLT-Net</a> (CVPR 2022) &middot;
+                <a href="https://arxiv.org/abs/2510.23473">Video-Thinker</a> (under review) &middot;
+                <a href="https://arxiv.org/abs/2603.27813">MuSEAgent</a> (under review)
+              </div>
               </td>
           </tr>
         </tbody></table>
 
-        <!-- LEAStereo -->
+        <!-- Topic 4: Embodied AI & Vision-Language-Action -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="papers/nips20.png" alt="LEAStereo" width="160" style="border-style: none">
+              <img src="papers/rational-vla.png" alt="Embodied AI & Vision-Language-Action" width="160" style="border-style: none">
             </td>
             <td style="padding:20px;width:75%;valign:middle">
-              <div style="text-indent:0.1em"> <papertitle>LEAStereo</papertitle> </div>
-              <div style="text-indent:0.1em"> A hierarchical neural architecture search framework for deep stereo matching that automatically discovers both the feature-extraction and matching network structures, ranking #1 on the KITTI stereo benchmark. </div>
-              <div style="text-indent:0.1em"> <a href="https://proceedings.neurips.cc/paper/2020/file/fc146be0b230d7e0a92e66a6114b840d-Paper.pdf">[Paper]</a>  <a href="https://github.com/XuelianCheng/LEAStereo">[Code]</a> <a href="https://slideslive.com/38936596">[Talk]</a>
-              </td>
-          </tr>
-        </tbody></table>
-
-        <!-- LidarStereoNet -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="papers/cvpr19.png" alt="LidarStereoNet" width="160" style="border-style: none">
-            </td>
-            <td style="padding:20px;width:75%;valign:middle">
-              <div style="text-indent:0.1em"> <papertitle>LidarStereoNet</papertitle> </div>
-              <div style="text-indent:0.1em"> An unsupervised deep fusion network that combines sparse LiDAR points with stereo image pairs to produce dense, noise-robust depth estimates without requiring ground-truth depth for training. </div>
-              <div style="text-indent:0.1em"> <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Cheng_Noise-Aware_Unsupervised_Deep_Lidar-Stereo_Fusion_CVPR_2019_paper.pdf">[Paper]</a>  <a href="https://github.com/XuelianCheng/LidarStereoNet">[Code]</a> <a href="https://www.youtube.com/watch?v=8wBzUY8bAvU">[Demo]</a>
+              <div style="text-indent:0.1em"> <papertitle>Embodied AI &amp; Vision-Language-Action</papertitle> </div>
+              <div style="text-indent:0.1em"> Developing vision-language-action models and reinforcement learning methods that let quadruped and manipulator robots act rationally, scale with data, and generalize across tasks and embodiments. </div>
+              <div style="text-indent:0.1em"> Representative work:
+                <a href="https://doi.org/10.48550/arXiv.2503.08007">MoRE</a> (ICRA 2025) &middot;
+                <a href="https://arxiv.org/pdf/2506.10826">RationalVLA</a> (TMech 2025)
+              </div>
               </td>
           </tr>
         </tbody></table>
