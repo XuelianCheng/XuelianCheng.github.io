@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static-preview",
+      "runtimeExecutable": "powershell.exe",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\user\\AppData\\Local\\Temp\\claude\\C--Users-user-Documents-GitHub-XuelianCheng-github-io\\8b6c3462-197f-4296-9b7d-686709053013\\scratchpad\\serve.ps1"],
+      "port": 8791
+    }
+  ]
+}
