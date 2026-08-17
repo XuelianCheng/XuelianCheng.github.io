@@ -121,6 +121,10 @@ strong {
   font-size: 16px;
 }
 
+li {
+  text-indent: 0;
+}
+
 heading {
   display: block;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -219,14 +223,15 @@ nav.sitenav a.active {
 
 /* team / project cards */
 .card-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 24px;
 }
 
 .member-card {
-  width: 100%;
-  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  min-height: 158px;
   padding: 14px;
   background: var(--card-bg);
   border: 1px solid var(--hairline);
