@@ -1,0 +1,10 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static-preview",
+      "url": "http://localhost:8923",
+      "port": 8923
+    }
+  ]
+}

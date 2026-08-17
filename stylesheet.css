@@ -215,3 +215,30 @@ nav.sitenav a.active {
   color: #333333;
   margin: 8px 0;
 }
+
+/* publication / project thumbnails */
+.pub-thumb {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+.pub-thumb img {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.pub-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00369f;
+  color: #ffffff;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 3px 8px;
+}
