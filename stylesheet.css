@@ -133,8 +133,8 @@ span.highlight {
 /* top navigation */
 nav.sitenav {
   width: 100%;
-  border-bottom: 1px solid #dcdcdc;
-  margin: 6px 0 0 0;
+  margin: 10px 0 4px 0;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 nav.sitenav ul {
@@ -143,6 +143,7 @@ nav.sitenav ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  gap: 6px;
 }
 
 nav.sitenav li {
@@ -152,23 +153,27 @@ nav.sitenav li {
 
 nav.sitenav a {
   display: block;
-  padding: 10px 18px;
+  padding: 9px 20px;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 15px;
-  color: #444444;
-  border-bottom: 3px solid transparent;
+  font-weight: 600;
+  color: #555555;
+  border-radius: 6px 6px 0 0;
+  border-bottom: 2px solid transparent;
+  transition: background-color .15s ease-in-out, color .15s ease-in-out;
 }
 
 nav.sitenav a:hover {
   color: #1772d0;
-  border-bottom: 3px solid #dcdcdc;
+  background-color: #f3f7fc;
   text-decoration: none;
 }
 
 nav.sitenav a.active {
   color: #1772d0;
   font-weight: 700;
-  border-bottom: 3px solid #1772d0;
+  background-color: #eaf2fc;
+  border-bottom: 2px solid #1772d0;
 }
 
 /* team / project cards */
