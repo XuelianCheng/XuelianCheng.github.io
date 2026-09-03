@@ -478,6 +478,15 @@ td > img[width="160"]:hover {
   object-fit: cover;
 }
 
+/* for portrait documents/certificates: show the whole page instead of cropping */
+.gallery-photo.contain {
+  background: #ffffff;
+}
+
+.gallery-photo.contain img {
+  object-fit: contain;
+}
+
 .gallery-photo-placeholder {
   width: 100%;
   height: 100%;
